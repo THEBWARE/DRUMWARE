@@ -1,292 +1,71 @@
-{
-  "SoftwareVersion": "2.0.0",
-  "Status": "True",
-  "Changelog": "Bug fixes and performance improvements.",
-  "SoftwareUrl": "https://github.com/THEBWARE/DRUMWARE/releases/tag/Exec",
-  "Files": [
-    {
-      "name": "chromium.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/chromium.dll"
-    },
-    {
-      "name": "CloudyApis.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CloudyApis.dll"
-    },
-    {
-      "name": "CloudyApis.pdb",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CloudyApis.pdb"
-    },
-    {
-      "name": "CuoreUI.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CuoreUI.dll"
-    },
-    {
-      "name": "DRUMWARE.deps.json",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.deps.json"
-    },
-    {
-      "name": "DRUMWARE.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.dll"
-    },
-    {
-      "name": "DRUMWARE.exe",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.exe"
-    },
-    {
-      "name": "DRUMWARE.pdb",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.pdb"
-    },
-    {
-      "name": "DRUMWARE.runtimeconfig.json",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.runtimeconfig.json"
-    },
-    {
-      "name": "Guna.UI2.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Guna.UI2.dll"
-    },
-    {
-      "name": "Microsoft.Bcl.AsyncInterfaces.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Bcl.AsyncInterfaces.dll"
-    },
-    {
-      "name": "Microsoft.Bcl.Cryptography.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Bcl.Cryptography.dll"
-    },
-    {
-      "name": "Microsoft.Extensions.DependencyModel.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Extensions.DependencyModel.dll"
-    },
-    {
-      "name": "Microsoft.Extensions.ObjectPool.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Extensions.ObjectPool.dll"
-    },
-    {
-      "name": "Microsoft.Web.WebView2.Core.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Core.dll"
-    },
-    {
-      "name": "Microsoft.Web.WebView2.Core.xml",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Core.xml"
-    },
-    {
-      "name": "Microsoft.Web.WebView2.WinForms.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.WinForms.dll"
-    },
-    {
-      "name": "Microsoft.Web.WebView2.WinForms.xml",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.WinForms.xml"
-    },
-    {
-      "name": "Microsoft.Web.WebView2.Wpf.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Wpf.dll"
-    },
-    {
-      "name": "Microsoft.Web.WebView2.Wpf.xml",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Wpf.xml"
-    },
-    {
-      "name": "Microsoft.Win32.Registry.AccessControl.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Win32.Registry.AccessControl.dll"
-    },
-    {
-      "name": "Microsoft.Win32.SystemEvents.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Win32.SystemEvents.dll"
-    },
-    {
-      "name": "Newtonsoft.Json.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Newtonsoft.Json.dll"
-    },
-    {
-      "name": "NuGet.Common.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Common.dll"
-    },
-    {
-      "name": "NuGet.Configuration.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Configuration.dll"
-    },
-    {
-      "name": "NuGet.DependencyResolver.Core.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.DependencyResolver.Core.dll"
-    },
-    {
-      "name": "NuGet.Frameworks.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Frameworks.dll"
-    },
-    {
-      "name": "NuGet.LibraryModel.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.LibraryModel.dll"
-    },
-    {
-      "name": "NuGet.Packaging.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Packaging.dll"
-    },
-    {
-      "name": "NuGet.ProjectModel.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.ProjectModel.dll"
-    },
-    {
-      "name": "NuGet.Protocol.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Protocol.dll"
-    },
-    {
-      "name": "NuGet.Versioning.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Versioning.dll"
-    },
-    {
-      "name": "System.CodeDom.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.CodeDom.dll"
-    },
-    {
-      "name": "System.ComponentModel.Composition.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ComponentModel.Composition.dll"
-    },
-    {
-      "name": "System.ComponentModel.Composition.Registration.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ComponentModel.Composition.Registration.dll"
-    },
-    {
-      "name": "System.Configuration.ConfigurationManager.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Configuration.ConfigurationManager.dll"
-    },
-    {
-      "name": "System.Data.Odbc.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.Odbc.dll"
-    },
-    {
-      "name": "System.Data.OleDb.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.OleDb.dll"
-    },
-    {
-      "name": "System.Data.SqlClient.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.SqlClient.dll"
-    },
-    {
-      "name": "System.Diagnostics.EventLog.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Diagnostics.EventLog.dll"
-    },
-    {
-      "name": "System.Diagnostics.PerformanceCounter.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Diagnostics.PerformanceCounter.dll"
-    },
-    {
-      "name": "System.DirectoryServices.AccountManagement.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.AccountManagement.dll"
-    },
-    {
-      "name": "System.DirectoryServices.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.dll"
-    },
-    {
-      "name": "System.DirectoryServices.Protocols.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.Protocols.dll"
-    },
-    {
-      "name": "System.Drawing.Common.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Drawing.Common.dll"
-    },
-    {
-      "name": "System.Formats.Asn1.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Formats.Asn1.dll"
-    },
-    {
-      "name": "System.IO.Packaging.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.IO.Packaging.dll"
-    },
-    {
-      "name": "System.IO.Ports.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.IO.Ports.dll"
-    },
-    {
-      "name": "System.Management.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Management.dll"
-    },
-    {
-      "name": "System.Private.ServiceModel.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Private.ServiceModel.dll"
-    },
-    {
-      "name": "System.Private.Windows.Core.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Private.Windows.Core.dll"
-    },
-    {
-      "name": "System.Reflection.Context.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Reflection.Context.dll"
-    },
-    {
-      "name": "System.Runtime.Caching.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Runtime.Caching.dll"
-    },
-    {
-      "name": "System.Security.Cryptography.Pkcs.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.Pkcs.dll"
-    },
-    {
-      "name": "System.Security.Cryptography.ProtectedData.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.ProtectedData.dll"
-    },
-    {
-      "name": "System.Security.Cryptography.Xml.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.Xml.dll"
-    },
-    {
-      "name": "System.Security.Permissions.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Permissions.dll"
-    },
-    {
-      "name": "System.ServiceModel.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.dll"
-    },
-    {
-      "name": "System.ServiceModel.Duplex.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Duplex.dll"
-    },
-    {
-      "name": "System.ServiceModel.Http.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Http.dll"
-    },
-    {
-      "name": "System.ServiceModel.NetTcp.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.NetTcp.dll"
-    },
-    {
-      "name": "System.ServiceModel.Primitives.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Primitives.dll"
-    },
-    {
-      "name": "System.ServiceModel.Security.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Security.dll"
-    },
-    {
-      "name": "System.ServiceModel.Syndication.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Syndication.dll"
-    },
-    {
-      "name": "System.ServiceProcess.ServiceController.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceProcess.ServiceController.dll"
-    },
-    {
-      "name": "System.Speech.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Speech.dll"
-    },
-    {
-      "name": "System.Text.Encoding.CodePages.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Text.Encoding.CodePages.dll"
-    },
-    {
-      "name": "System.Threading.AccessControl.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Threading.AccessControl.dll"
-    },
-    {
-      "name": "System.Web.Services.Description.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Web.Services.Description.dll"
-    },
-    {
-      "name": "System.Windows.Extensions.dll",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Windows.Extensions.dll"
-    },
-    {
-      "name": "version.txt",
-      "url": "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/version.txt"
-    }
-  ]
-}
+curl -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/chromium.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CloudyApis.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CloudyApis.pdb \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CuoreUI.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.deps.json \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.exe \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.pdb \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.runtimeconfig.json \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Guna.UI2.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Bcl.AsyncInterfaces.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Bcl.Cryptography.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Extensions.DependencyModel.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Extensions.ObjectPool.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Core.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Core.xml \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.WinForms.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.WinForms.xml \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Wpf.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Wpf.xml \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Win32.Registry.AccessControl.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Win32.SystemEvents.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Newtonsoft.Json.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Common.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Configuration.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.DependencyResolver.Core.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Frameworks.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.LibraryModel.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Packaging.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.ProjectModel.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Protocol.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Versioning.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.CodeDom.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ComponentModel.Composition.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ComponentModel.Composition.Registration.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Configuration.ConfigurationManager.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.Odbc.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.OleDb.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.SqlClient.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Diagnostics.EventLog.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Diagnostics.PerformanceCounter.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.AccountManagement.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.Protocols.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Drawing.Common.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Formats.Asn1.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.IO.Packaging.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.IO.Ports.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Management.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Private.ServiceModel.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Private.Windows.Core.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Reflection.Context.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Runtime.Caching.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.Pkcs.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.ProtectedData.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.Xml.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Permissions.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Duplex.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Http.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.NetTcp.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Primitives.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Security.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Syndication.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceProcess.ServiceController.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Speech.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Text.Encoding.CodePages.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Threading.AccessControl.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Web.Services.Description.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Windows.Extensions.dll \
+     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/version.txt
