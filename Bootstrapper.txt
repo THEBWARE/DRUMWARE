@@ -1,5 +1,5 @@
 {
-  "SoftwareVersion": "1.0.0",
+  "SoftwareVersion": "2.0.0",
   "Status": "True",
   "Changelog": "Bug fixes and performance improvements.",
   "SoftwareUrl": "https://github.com/THEBWARE/DRUMWARE/releases/tag/Executor",
