@@ -1,8 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <curl/curl.h> // libcurl header (provided by NuGet)
-#include <filesystem>
+using <iostream>
+using <vector>
+using <string>
+using <curl/curl.h> // libcurl header (provided by NuGet)
+using <filesystem>
 
 namespace fs = std::filesystem;
 
