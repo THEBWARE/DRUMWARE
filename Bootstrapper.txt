@@ -1,8 +1,13 @@
-import os
-import requests
+#include <iostream>
+#include <vector>
+#include <string>
+#include <curl/curl.h>
+#include <filesystem>
 
-# List of files to download
-files = [
+namespace fs = std::filesystem;
+
+// List of files to download
+std::vector<std::string> files = {
     "chromium.dll",
     "CloudyApis.dll",
     "CloudyApis.pdb",
@@ -76,28 +81,61 @@ files = [
     "System.Windows.Extensions.dll",
     "t+.exe",
     "version.txt"
-]
+};
 
-# Base URL for the downloads
-base_url = "https://github.com/THEBWARE/DRUMWARE/releases/download/Executor/"
+// Base URL for the downloads
+std::string base_url = "https://github.com/THEBWARE/DRUMWARE/releases/download/Executor/";
 
-# Directory to save the files (same as the script's directory)
-save_directory = os.path.dirname(os.path.abspath(__file__))
+// Directory to save the files (same as the executable's directory)
+std::string save_directory = fs::current_path().string();
 
-# Function to download a file
-def download_file(url, save_path):
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open(save_path, 'wb') as file:
-            file.write(response.content)
-        print(f"Downloaded: {save_path}")
-    else:
-        print(f"Failed to download: {url}")
+// Callback function to write data to a file
+size_t WriteData(void* ptr, size_t size, size_t nmemb, FILE* stream) {
+    return fwrite(ptr, size, nmemb, stream);
+}
 
-# Download all files
-for file in files:
-    file_url = base_url + file
-    save_path = os.path.join(save_directory, file)
-    download_file(file_url, save_path)
+// Function to download a file
+bool download_file(const std::string& url, const std::string& save_path) {
+    CURL* curl = curl_easy_init();
+    if (curl) {
+        FILE* fp = fopen(save_path.c_str(), "wb");
+        if (!fp) {
+            std::cerr << "Failed to open file for writing: " << save_path << std::endl;
+            return false;
+        }
 
-print("All files downloaded.")
+        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteData);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+        CURLcode res = curl_easy_perform(curl);
+        fclose(fp);
+
+        if (res != CURLE_OK) {
+            std::cerr << "Failed to download: " << url << " - " << curl_easy_strerror(res) << std::endl;
+            return false;
+        }
+
+        curl_easy_cleanup(curl);
+        std::cout << "Downloaded: " << save_path << std::endl;
+        return true;
+    }
+    return false;
+}
+
+int main() {
+    // Initialize libcurl
+    curl_global_init(CURL_GLOBAL_DEFAULT);
+
+    // Download all files
+    for (const auto& file : files) {
+        std::string file_url = base_url + file;
+        std::string save_path = (fs::path(save_directory) / file).string();
+        download_file(file_url, save_path);
+    }
+
+    // Cleanup libcurl
+    curl_global_cleanup();
+
+    std::cout << "All files downloaded." << std::endl;
+    return 0;
+}
