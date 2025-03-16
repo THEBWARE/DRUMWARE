@@ -1,13 +1,9 @@
-using <iostream>
-using <vector>
-using <string>
-using <curl/curl.h> // libcurl header (provided by NuGet)
-using <filesystem>
-
-namespace fs = std::filesystem;
-
-// List of files to download
-std::vector<std::string> files = {
+{
+  "SoftwareVersion": "1.0.0",
+  "Status": "True",
+  "Changelog": "Fixed injection Method",
+  "SoftwareUrl": "https://your-download-link.com/drumware.zip",
+  "Files": [
     "chromium.dll",
     "CloudyApis.dll",
     "CloudyApis.pdb",
@@ -40,7 +36,6 @@ std::vector<std::string> files = {
     "NuGet.ProjectModel.dll",
     "NuGet.Protocol.dll",
     "NuGet.Versioning.dll",
-    "sh.exe",
     "System.CodeDom.dll",
     "System.ComponentModel.Composition.dll",
     "System.ComponentModel.Composition.Registration.dll",
@@ -79,65 +74,6 @@ std::vector<std::string> files = {
     "System.Threading.AccessControl.dll",
     "System.Web.Services.Description.dll",
     "System.Windows.Extensions.dll",
-    "t+.exe",
     "version.txt"
-};
-
-// Base URL for the downloads
-std::string base_url = "https://github.com/THEBWARE/DRUMWARE/releases/download/Executor/";
-
-// Directory to save the files (same as the executable's directory)
-std::string save_directory = fs::current_path().string();
-
-// Callback function to write data to a file
-size_t WriteData(void* ptr, size_t size, size_t nmemb, FILE* stream) {
-    return fwrite(ptr, size, nmemb, stream);
-}
-
-// Function to download a file
-bool download_file(const std::string& url, const std::string& save_path) {
-    CURL* curl = curl_easy_init();
-    if (curl) {
-        FILE* fp = fopen(save_path.c_str(), "wb");
-        if (!fp) {
-            std::cerr << "Failed to open file for writing: " << save_path << std::endl;
-            return false;
-        }
-
-        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
-        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteData);
-        curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
-        CURLcode res = curl_easy_perform(curl);
-        fclose(fp);
-
-        if (res != CURLE_OK) {
-            std::cerr << "Failed to download: " << url << " - " << curl_easy_strerror(res) << std::endl;
-            return false;
-        }
-
-        curl_easy_cleanup(curl);
-        std::cout << "Downloaded: " << save_path << std::endl;
-        return true;
-    }
-    return false;
-}
-
-int main() {
-    // Initialize libcurl
-    curl_global_init(CURL_GLOBAL_DEFAULT);
-
-    // Download all files
-    for (const auto& file : files) {
-        std::string file_url = base_url + file;
-        std::string save_path = (fs::path(save_directory) / file).string();
-        if (!download_file(file_url, save_path)) {
-            std::cerr << "Failed to download file: " << file << std::endl;
-        }
-    }
-
-    // Cleanup libcurl
-    curl_global_cleanup();
-
-    std::cout << "All files downloaded." << std::endl;
-    return 0;
+  ]
 }
