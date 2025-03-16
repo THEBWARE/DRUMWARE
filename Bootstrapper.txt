@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <curl/curl.h>
+#include <curl/curl.h> // libcurl header (provided by NuGet)
 #include <filesystem>
 
 namespace fs = std::filesystem;
@@ -130,7 +130,9 @@ int main() {
     for (const auto& file : files) {
         std::string file_url = base_url + file;
         std::string save_path = (fs::path(save_directory) / file).string();
-        download_file(file_url, save_path);
+        if (!download_file(file_url, save_path)) {
+            std::cerr << "Failed to download file: " << file << std::endl;
+        }
     }
 
     // Cleanup libcurl
