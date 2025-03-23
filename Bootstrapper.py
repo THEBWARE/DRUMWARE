@@ -1,6 +1,8 @@
 import requests
 import os
 import zipfile
+import shutil
+from colorama import Fore, Style  # For colored text
 
 def display_ascii_art():
     ascii_art = """
@@ -10,7 +12,7 @@ ____  ____  _   _ __  ____        ___    ____  _____
 | |_| |  _ <| |_| | |  | | \ V  V / ___ \|  _ <| |___ 
 |____/|_| \_\\___/|_|  |_|  \_/\_/_/   \_\_| \_\_____|
     """
-    print(ascii_art)
+    print(Fore.BLUE + ascii_art + Style.RESET_ALL)  # Print ASCII art in blue
 
 def download_file(url, filename):
     print(f"Step 1: Downloading {filename} from {url}")
@@ -27,6 +29,15 @@ def unzip_file(filename, extract_to):
         zip_ref.extractall(extract_to)
     print(f"Step 4: {filename} unzipped successfully.")
 
+def move_contents_and_delete_folder(folder_path):
+    print(f"Step 5: Moving contents of {folder_path} to parent directory and deleting the folder.")
+    parent_dir = os.path.dirname(folder_path)
+    for item in os.listdir(folder_path):
+        item_path = os.path.join(folder_path, item)
+        shutil.move(item_path, parent_dir)
+    os.rmdir(folder_path)
+    print(f"Step 6: {folder_path} deleted, but its contents are preserved in the parent directory.")
+
 def main():
     display_ascii_art()
     url = "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE-V1.1.35.zip"
@@ -39,6 +50,7 @@ def main():
 
     download_file(url, zip_filename)
     unzip_file(zip_filename, extract_to)
+    move_contents_and_delete_folder(extract_to)
 
     print("All steps completed successfully.")
 
