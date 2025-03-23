@@ -1,71 +1,46 @@
-curl -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/chromium.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CloudyApis.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CloudyApis.pdb \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/CuoreUI.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.deps.json \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.exe \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.pdb \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE.runtimeconfig.json \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Guna.UI2.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Bcl.AsyncInterfaces.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Bcl.Cryptography.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Extensions.DependencyModel.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Extensions.ObjectPool.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Core.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Core.xml \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.WinForms.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.WinForms.xml \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Wpf.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Web.WebView2.Wpf.xml \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Win32.Registry.AccessControl.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Microsoft.Win32.SystemEvents.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/Newtonsoft.Json.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Common.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Configuration.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.DependencyResolver.Core.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Frameworks.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.LibraryModel.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Packaging.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.ProjectModel.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Protocol.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/NuGet.Versioning.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.CodeDom.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ComponentModel.Composition.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ComponentModel.Composition.Registration.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Configuration.ConfigurationManager.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.Odbc.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.OleDb.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Data.SqlClient.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Diagnostics.EventLog.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Diagnostics.PerformanceCounter.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.AccountManagement.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.DirectoryServices.Protocols.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Drawing.Common.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Formats.Asn1.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.IO.Packaging.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.IO.Ports.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Management.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Private.ServiceModel.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Private.Windows.Core.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Reflection.Context.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Runtime.Caching.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.Pkcs.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.ProtectedData.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Cryptography.Xml.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Security.Permissions.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Duplex.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Http.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.NetTcp.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Primitives.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Security.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceModel.Syndication.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.ServiceProcess.ServiceController.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Speech.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Text.Encoding.CodePages.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Threading.AccessControl.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Web.Services.Description.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/System.Windows.Extensions.dll \
-     -O https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/version.txt
+import requests
+import os
+import zipfile
+
+def display_ascii_art():
+    ascii_art = """
+____  ____  _   _ __  ____        ___    ____  _____ 
+|  _ \|  _ \| | | |  \/  \ \      / / \  |  _ \| ____|
+| | | | |_) | | | | |\/| |\ \ /\ / / _ \ | |_) |  _|  
+| |_| |  _ <| |_| | |  | | \ V  V / ___ \|  _ <| |___ 
+|____/|_| \_\\___/|_|  |_|  \_/\_/_/   \_\_| \_\_____|
+    """
+    print(ascii_art)
+
+def download_file(url, filename):
+    print(f"Step 1: Downloading {filename} from {url}")
+    with requests.get(url, stream=True) as r:
+        r.raise_for_status()
+        with open(filename, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=8192):
+                f.write(chunk)
+    print(f"Step 2: {filename} downloaded successfully.")
+
+def unzip_file(filename, extract_to):
+    print(f"Step 3: Unzipping {filename} to {extract_to}")
+    with zipfile.ZipFile(filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_to)
+    print(f"Step 4: {filename} unzipped successfully.")
+
+def main():
+    display_ascii_art()
+    url = "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE-V1.1.35.zip"
+    zip_filename = "DRUMWARE-V1.1.35.zip"
+    extract_to = "DRUMWARE_V1.1.35"
+
+    # Ensure the directory exists
+    if not os.path.exists(extract_to):
+        os.makedirs(extract_to)
+
+    download_file(url, zip_filename)
+    unzip_file(zip_filename, extract_to)
+
+    print("All steps completed successfully.")
+
+if __name__ == "__main__":
+    main()
