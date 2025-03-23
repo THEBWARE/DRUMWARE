@@ -2,17 +2,18 @@ import requests
 import os
 import zipfile
 import shutil
-from colorama import Fore, Style  # For colored text
 
 def display_ascii_art():
+    # ANSI escape code for blue text: \033[94m
+    # ANSI escape code to reset color: \033[0m
     ascii_art = """
-____  ____  _   _ __  ____        ___    ____  _____ 
+\033[94m____  ____  _   _ __  ____        ___    ____  _____ 
 |  _ \|  _ \| | | |  \/  \ \      / / \  |  _ \| ____|
 | | | | |_) | | | | |\/| |\ \ /\ / / _ \ | |_) |  _|  
 | |_| |  _ <| |_| | |  | | \ V  V / ___ \|  _ <| |___ 
-|____/|_| \_\\___/|_|  |_|  \_/\_/_/   \_\_| \_\_____|
+|____/|_| \_\\___/|_|  |_|  \_/\_/_/   \_\_| \_\_____|\033[0m
     """
-    print(Fore.BLUE + ascii_art + Style.RESET_ALL)  # Print ASCII art in blue
+    print(ascii_art)  # Print ASCII art in blue
 
 def download_file(url, filename):
     print(f"Step 1: Downloading {filename} from {url}")
