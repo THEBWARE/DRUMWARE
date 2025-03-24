@@ -18,16 +18,16 @@ ____  ____  _   _ __  ____        ___    ____  _____
     print(f"{blue_color}{ascii_art}{reset_color}")
 
 def download_file(url, filename):
-    print(f"Step 1: Downloading")
+    print(f"Step 1: Downloading {filename}")
     with requests.get(url, stream=True) as r:
         r.raise_for_status()
         with open(filename, 'wb') as f:
             for chunk in r.iter_content(chunk_size=8192):
                 f.write(chunk)
-    print(f"Step 2: {filename} downloaded")
+    print(f"Step 2: {filename} downloaded successfully.")
 
 def unzip_file(filename, extract_to):
-    print(f"Step 3: Unzipping")
+    print(f"Step 3: Unzipping {filename} to {extract_to}")
     with zipfile.ZipFile(filename, 'r') as zip_ref:
         zip_ref.extractall(extract_to)
     print(f"Step 4: {filename} unzipped successfully.")
@@ -35,7 +35,7 @@ def unzip_file(filename, extract_to):
 def main():
     display_ascii_art()
     url = "https://github.com/THEBWARE/DRUMWARE/releases/download/DRUMWARE/DRUMWARE-V1.1.40.zip"
-    zip_filename = "DRUMWARE-V1.1.40"
+    zip_filename = "DRUMWARE-V1.1.40.zip"
     extract_to = "DRUMWARE-V1.1.40"
 
     # Ensure the directory exists
