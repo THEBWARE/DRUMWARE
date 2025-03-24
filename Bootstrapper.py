@@ -34,7 +34,7 @@ def unzip_file(filename, extract_to):
 
 def main():
     display_ascii_art()
-    url = "https://github.com/THEBWARE/DRUMWARE/releases/download/Exec/DRUMWARE-V1.1.35.zip"
+    url = "https://github.com/THEBWARE/DRUMWARE/releases/download/DRUMWARE/DRUMWARE-V1.1.40.zip"
     zip_filename = "DRUMWARE-V1.1.35.zip"
     extract_to = "DRUMWARE_V1.1.35"
 
