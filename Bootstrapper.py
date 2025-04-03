@@ -36,7 +36,7 @@ def main():
     display_ascii_art()
     url = "https://github.com/THEBWARE/DRUMWARE/releases/download/DRUMWARE/DRUMWARE-V8.0.0.zip"
     zip_filename = "DRUMWARE-V8.0.0.zip"
-    extract_to = "DRUMWARE-V8.0.0.zip"
+    extract_to = "DRUMWARE-V8.0.0"
 
     # Ensure the directory exists
     if not os.path.exists(extract_to):
