@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.location.href = "https://github.com/THEBWARE/DRUMWARE/releases/download/DRUMWARE/DRUMWARE-V1.1.40.zip";
+    </script>
+</head>
+<body>
+    <h1>Redirecting you to the download...</h1>
+</body>
+</html>
